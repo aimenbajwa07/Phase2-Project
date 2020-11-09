@@ -1,0 +1,186 @@
+<div class="container">
+    <button type="button" class="btn btn-primary"  (click)="loadQuiz()">Load Quiz </button>
+    <hr>
+    <div *ngIf="flag">
+       
+        <form #quizRef="ngForm" (ngSubmit)="onSubmit(quizRef.value, buttonType,i)" >
+        <div  class="jumbotron ">
+            <h2>1. {{quizInfo &&quizInfo[0]?.questionName}}</h2>     
+            <div *ngFor="let opt of quizInfo&&quizInfo[0]?.options;">
+                
+                <input type="radio" name="q" value="{{opt.name}}" ngModel >
+                {{opt.name}}     
+            </div>
+            <button class="btn btn-primary"type="submit" (click)="onSubmit(quizRef.value,'Save',0)" [disabled]="flag1" > Save</button>
+            <hr>
+            <p style="color:red;text-align:center;font-weight: bold;">{{msg1}}</p>
+            
+            </div>
+
+
+            <div  class="jumbotron ">
+                <h2>2. {{quizInfo &&quizInfo[1]?.questionName}}</h2>     
+                <div *ngFor="let opt of quizInfo&&quizInfo[1]?.options;">
+                    
+                    <input type="radio" name="q" value="{{opt.name}}" ngModel >
+                    {{opt.name}}     
+                </div>
+                <button class="btn btn-primary"type="submit" (click)="onSubmit(quizRef.value,'Save',1)" [disabled]="flag2" > Save</button>
+                <hr>
+                <p style="color:red;text-align:center;font-weight: bold;">{{msg2}}</p>
+        
+             </div>
+
+             <div  class="jumbotron ">
+                <h2>3. {{quizInfo &&quizInfo[2]?.questionName}}</h2>     
+                <div *ngFor="let opt of quizInfo&&quizInfo[2]?.options;">
+                    
+                    <input type="radio" name="q" value="{{opt.name}}" ngModel >
+                    {{opt.name}}     
+                </div>
+                <button class="btn btn-primary"type="submit" (click)="onSubmit(quizRef.value,'Save',2)" [disabled]="flag3" > Save</button>
+                <hr>
+                <p style="color:red;text-align:center;font-weight: bold;">{{msg3}}</p>
+        
+            </div>
+                
+            <div  class="jumbotron ">
+                <h2>4. {{quizInfo &&quizInfo[3]?.questionName}}</h2>     
+                <div *ngFor="let opt of quizInfo&&quizInfo[3]?.options;">
+                    
+                    <input type="radio" name="q" value="{{opt.name}}" ngModel >
+                    {{opt.name}}     
+                </div>
+                <button class="btn btn-primary"type="submit" (click)="onSubmit(quizRef.value,'Save',3)" [disabled]="flag4" > Save</button>
+                <hr>
+                <div *ngIf="flag4">
+                <p style="color:red;text-align:center;font-weight: bold;">{{msg4}}</p>
+                </div>
+        
+            </div>
+
+            <div  class="jumbotron ">
+                <h2>5. {{quizInfo &&quizInfo[4]?.questionName}}</h2>     
+                <div *ngFor="let opt of quizInfo&&quizInfo[4]?.options;">
+                    
+                    <input type="radio" name="q" value="{{opt.name}}" ngModel >
+                    {{opt.name}}     
+                </div>
+                <button class="btn btn-primary"type="submit" (click)="onSubmit(quizRef.value,'Save',4)" [disabled]="flag5" > Save</button>
+                <hr>
+                <p style="color:red;text-align:center;font-weight: bold;">{{msg5}}</p>
+        
+            </div>
+
+            <div  class="jumbotron ">
+                <h2>6. {{quizInfo &&quizInfo[5]?.questionName}}</h2>     
+                <div *ngFor="let opt of quizInfo&&quizInfo[5]?.options;">
+                    
+                    <input type="radio" name="q" value="{{opt.name}}" ngModel >
+                    {{opt.name}}     
+                </div>
+                <button class="btn btn-primary"type="submit" (click)="onSubmit(quizRef.value,'Save',5)" [disabled]="flag6" > Save</button>
+                <hr>
+                <p style="color:red;text-align:center;font-weight: bold;">{{msg6}}</p>
+        
+            </div>
+
+            <div  class="jumbotron ">
+                <h2>7. {{quizInfo &&quizInfo[6]?.questionName}}</h2>     
+                <div *ngFor="let opt of quizInfo&&quizInfo[6]?.options;">
+                    
+                    <input type="radio" name="q" value="{{opt.name}}" ngModel >
+                    {{opt.name}}     
+                </div>
+                <button class="btn btn-primary"type="submit" (click)="onSubmit(quizRef.value,'Save',6)" [disabled]="flag7" > Save</button>
+                <hr>
+                <p style="color:red;text-align:center;font-weight: bold;">{{msg7}}</p>
+        
+            </div>
+
+            <div  class="jumbotron ">
+                <h2>8. {{quizInfo &&quizInfo[7]?.questionName}}</h2>     
+                <div *ngFor="let opt of quizInfo&&quizInfo[7]?.options;">
+                    
+                    <input type="radio" name="q" value="{{opt.name}}" ngModel >
+                    {{opt.name}}     
+                </div>
+                <button class="btn btn-primary"type="submit" (click)="onSubmit(quizRef.value,'Save',7)" [disabled]="flag8" > Save</button>
+                <hr>
+                <p style="color:red;text-align:center;font-weight: bold;">{{msg8}}</p>
+        
+            </div>
+
+            <div  class="jumbotron ">
+                <h2>9. {{quizInfo &&quizInfo[8]?.questionName}}</h2>     
+                <div *ngFor="let opt of quizInfo&&quizInfo[8]?.options;">
+                    
+                    <input type="radio" name="q" value="{{opt.name}}" ngModel >
+                    {{opt.name}}     
+                </div>
+                <button class="btn btn-primary"type="submit" (click)="onSubmit(quizRef.value,'Save',8)" [disabled]="flag9" > Save</button>
+                <hr>
+                <p style="color:red;text-align:center;font-weight: bold;">{{msg9}}</p>
+        
+            </div>
+
+            <div  class="jumbotron ">
+                <h2>10. {{quizInfo &&quizInfo[9]?.questionName}}</h2>     
+                <div *ngFor="let opt of quizInfo&&quizInfo[9]?.options;">
+                    
+                    <input type="radio" name="q" value="{{opt.name}}" ngModel >
+                    {{opt.name}}     
+                </div>
+                <button class="btn btn-primary"type="submit" (click)="onSubmit(quizRef.value,'Save',9)" [disabled]="flag10" > Save</button>
+                <hr>
+                <p style="color:red;text-align:center;font-weight: bold;">{{msg10}}</p>
+        
+                </div>
+                
+                
+                
+                
+                
+
+                
+                
+                
+            
+            
+                
+            
+            </form> 
+        <div class="panel-footer">
+            <button type=button class="btn btn-primary"type="submit" (click)="onSubmit('quizRef.value','Submit',0)" data-toggle="modal" data-target="#exampleModal">Submit</button>           
+          </div>
+
+        
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">Result</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p style="font-weight: bold; text-align: center">Total Questions = 10</p>  
+            <p style="font-weight: bold; text-align: center">Correct Answers:  {{counter}}</p>
+            <p style="font-weight: bold; text-align: center">Wrong Answers:  {{10 - counter}}</p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        
+
+
+    </div>
+</div>
+
