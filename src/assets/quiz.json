@@ -1,0 +1,266 @@
+{"question": [
+	{
+		"questionId":1000,
+		"questionName":"Where is an array stored in memory?",
+		"answerIndex": 0,
+		"options": [
+			{
+				"answerId": 1001,
+				"name":"Heap space",
+				"isAnswer":true
+			},
+			{
+				"answerId": 1002,
+				"name" : "Stack space",
+				"isAnswer" : false
+			},
+			{
+				"answerId": 1003,
+				"name" : "Does not need memory",
+				"isAnswer" : false
+			},
+			{
+				"answerId": 1004,
+				"name" : "Both option a and b",
+				"isAnswer" : false
+			}
+		]
+	},
+
+
+	{"questionId":2000,
+		"questionName":"Which of these is an incorrect array declaration?",
+		"answerIndex": 3,
+		"options": [
+			{
+				"answerId": 2001,
+				"name":"int arr[] = new int[5];",
+				"isAnswer":false
+			},
+			{
+				"answerId": 2002,
+				"name" : "int[] arr = new int[5];",
+				"isAnswer" : false
+			},
+			{
+				"answerId": 2003,
+				"name" : "int arr[];  arr = new int[5];",
+				"isAnswer" : false
+			},
+			{
+				"answerId": 2004,
+				"name" : "int arr[] = int[5] new;",
+				"isAnswer" : true
+			}
+		]},
+
+
+	{"questionId":3000,
+		"questionName":"Which of the following can be operands of arithmetric operators:",
+		"answerIndex": 3,
+		"options": [
+			{
+				"answerId": 3001,
+				"name":"Boolean",
+				"isAnswer":false
+			},
+			{
+				"answerId": 3002,
+				"name" : "Numeric",
+				"isAnswer" : false
+			},
+			{
+				"answerId": 3003,
+				"name" : "Characters",
+				"isAnswer" : false
+			},
+			{
+				"answerId": 3004,
+				"name" : "Both Numeric and Characters",
+				"isAnswer" : true
+			}
+		]},
+
+		{"questionId":4000,
+		"questionName":"Which of these jump statements can skip processing the remainder of the code in its body:",
+		"answerIndex": 3,
+		"options": [
+			{
+				"answerId": 4001,
+				"name":"break",
+				"isAnswer":false
+			},
+			{
+				"answerId": 4002,
+				"name" : "return",
+				"isAnswer" : false
+			},
+			{
+				"answerId": 4003,
+				"name" : "exit",
+				"isAnswer" : false
+			},
+			{
+				"answerId": 4004,
+				"name" : "continue",
+				"isAnswer" : true
+			}
+		]},
+
+		{"questionId":5000,
+		"questionName":"Which of the following is not OOPs concept in Java?",
+		"answerIndex": 1,
+		"options": [
+			{
+				"answerId": 5001,
+				"name":"Inheritance",
+				"isAnswer":false
+			},
+			{
+				"answerId": 5002,
+				"name" : "Compilation",
+				"isAnswer" : true
+			},
+			{
+				"answerId": 5003,
+				"name" : "Polymorphism",
+				"isAnswer" : false
+			},
+			{
+				"answerId": 5004,
+				"name" : "Encapsulation",
+				"isAnswer" : false
+			}
+		]},
+
+		{"questionId":6000,
+		"questionName":"When is method overloading determined?",
+		"answerIndex": 1,
+		"options": [
+			{
+				"answerId": 6001,
+				"name":"At run time",
+				"isAnswer":false
+			},
+			{
+				"answerId": 6002,
+				"name" : "At compile time",
+				"isAnswer" : true
+			},
+			{
+				"answerId": 6003,
+				"name" : "At any time",
+				"isAnswer" : false
+			},
+			{
+				"answerId": 6004,
+				"name" : "At execution time",
+				"isAnswer" : false
+			}
+		]},
+
+		{"questionId":7000,
+		"questionName":"Which keyword is used by the method to refer to the object that invoked it?",
+		"answerIndex": 2,
+		"options": [
+			{
+				"answerId": 7001,
+				"name":"import",
+				"isAnswer":false
+			},
+			{
+				"answerId": 7002,
+				"name" : "catch",
+				"isAnswer" : false
+			},
+			{
+				"answerId": 7003,
+				"name" : " this",
+				"isAnswer" : true
+			},
+			{
+				"answerId": 7004,
+				"name" : "abstract",
+				"isAnswer" : false
+			}
+		]},
+
+		{"questionId":8000,
+		"questionName":"What is the return type of Constructors?",
+		"answerIndex": 3,
+		"options": [
+			{
+				"answerId": 8001,
+				"name":"int",
+				"isAnswer":false
+			},
+			{
+				"answerId": 8002,
+				"name" : "boolean",
+				"isAnswer" : false
+			},
+			{
+				"answerId": 8003,
+				"name" : "void",
+				"isAnswer" : false
+			},
+			{
+				"answerId": 8004,
+				"name" : "none of the mentioned above",
+				"isAnswer" : true
+			}
+		]},
+
+		{"questionId":9000,
+		"questionName":"String in java is a ?",
+		"answerIndex": 1,
+		"options": [
+			{
+				"answerId": 9001,
+				"name":"class",
+				"isAnswer":false
+			},
+			{
+				"answerId": 9002,
+				"name" : "object",
+				"isAnswer" : true
+			},
+			{
+				"answerId": 9003,
+				"name" : "variable",
+				"isAnswer" : false
+			},
+			{
+				"answerId": 9004,
+				"name" : "character array",
+				"isAnswer" : false
+			}
+		]},
+
+		{"questionId":10000,
+		"questionName":"Which keyword is used to inherent a class?",
+		"answerIndex": 2,
+		"options": [
+			{
+				"answerId": 10001,
+				"name":"super",
+				"isAnswer":false
+			},
+			{
+				"answerId": 10002,
+				"name" : "implement",
+				"isAnswer" : false
+			},
+			{
+				"answerId": 10003,
+				"name" : "extends",
+				"isAnswer" : true
+			},
+			{
+				"answerId": 10004,
+				"name" : " child",
+				"isAnswer" : false
+			}
+		]}
+	
+]}
